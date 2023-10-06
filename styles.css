@@ -1,14 +1,26 @@
+/* VARS */
+:root {
+    --bg: white;
+    --main: rgb(255, 192, 203);
+    --main-light: rgb(255, 222, 228);
+    --translucent: rgba(255, 192, 203, 0.4);
+    --accent: rgb(78, 165, 92);
+    --acc-light: rgb(192, 240, 201);
+    --text: rgb(178,116,61);
+}
+
+
 /* MAIN / BODY */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: 'Inconsolata';
-    color: rgb(157, 95, 40);
-    background-color: pink;
+    font-family: 'Inconsolata', 'Times New Roman', Times, serif;
+    color: var(--text);
+    background-color: var(--main);
 
     height: 100vh;
     display: flex;
@@ -16,10 +28,11 @@ body {
     align-items: center;
 }
 h1, h3 {
-    font-family: 'Shadows into Light';
+    font-family: 'Shadows into Light', 'Brush Script MT', cursive;
 }
 
 /* LEFT / RIGHT COLS */
+
 .left {
     background-image: url("foad-roshan-TtDNu-Heh3Y-unsplash.jpg");
     background-size: cover;
@@ -32,7 +45,7 @@ h1, h3 {
     justify-content: space-between;
 }
 .right {
-    background-color: white;
+    background-color: var(--bg);
 
     width: 55vw;
     padding: 3%;
@@ -43,8 +56,9 @@ h1, h3 {
 }
 
 /* LEFT COL */
+
 .left header {
-    background-color:rgba(255, 192, 203, 0.402);
+    background-color: var(--translucent);
 
     padding: 15px;
     margin-top: 40%;
@@ -56,50 +70,20 @@ h1, h3 {
 }
 .left .photo-credit {
     padding: 15px;
+    text-align: right;
 }
 
 /* RIGHT FORM */
+
 .right h3 {
     font-size: 1.5rem;
 }
 .right form {
-    border: 3px dashed pink;
+    border: 3px dashed var(--main);
 
     padding: 25px;
 
     display: flex;
     flex-direction: column;
     gap: 25px;
-}
-
-form .text-inputs {
-    display: flex;
-    gap: 40px;
-}
-.left-text, .right-text {
-    list-style-type: none;
-
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-li.text-input {
-    display: flex;
-    flex-direction: column;
-}
-
-form .radio-inputs {
-    border: 2px solid pink;
-    padding: 20px;
-
-    display: flex;
-    gap: 40px;
-}
-
-form button {
-    width: 40%;
-    padding: 10px;
-
-    align-self: center;
 }

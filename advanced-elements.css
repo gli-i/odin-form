@@ -1,0 +1,75 @@
+/* LINKS */
+
+a:link {
+    color: var(--accent);
+}
+a:visited {
+    color: var(--accent);
+}
+a:hover {
+    color: rgb(212, 111, 212);
+}
+
+/* TEXT INPUTS */
+
+form .text-inputs {
+    display: flex;
+    gap: 40px;
+}
+.left-text, .right-text {
+    list-style-type: none;
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+li.text-input {
+    display: flex;
+    flex-direction: column;
+}
+.text-input input {
+    color: var(--accent);
+    border: 1px solid var(--main);
+    border-radius: 10px;
+    padding: 5px;
+}
+.text-input input:invalid {
+    border: 1px solid red;
+}
+
+/* RADIO INPUTS */
+
+form .radio-inputs {
+    border: 2px solid var(--main);
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+}
+.radio-input input {
+    accent-color: var(--accent);
+}
+
+
+/* BUTTON */
+
+form button {
+    color: var(--text);
+    background-color: var(--main-light);
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    box-shadow: 0 4px var(--acc-light);
+
+    width: 40%;
+    padding: 10px;
+
+    align-self: center;
+}
+form button:hover {
+    background-color: var(--main);
+}
+form button:active {
+    transform: translate(0,4px);
+    box-shadow: none;
+}

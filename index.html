@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="advanced-elements.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +31,15 @@
                 <ul class="left-text">
                     <li class="text-input">
                         <label for="first-name">First Name</label>
-                        <input id="first-name" name="first-name" type="text">
+                        <input id="first-name" name="first-name" type="text" required>
                     </li>
                     <li class="text-input">
                         <label for="user-email">Email</label>
-                        <input id="user-email" name="user-email" type="email">
+                        <input id="user-email" name="user-email" type="email" required>
                     </li>
                     <li class="text-input">
                         <label for="user-password">Password</label>
-                        <input id="user-password" name="user-password" type="text">
+                        <input id="user-password" name="user-password" type="text" required>
                     </li>
                 </ul>
                 <ul class="right-text">
@@ -52,7 +53,7 @@
                     </li>
                     <li class="text-input">
                         <label for="confirm-password">Confirm Password</label>
-                        <input id="confirm-password" name="confirm-password" type="text">
+                        <input id="confirm-password" name="confirm-password" type="text" required>
                     </li>
                 </ul>
             </div>
@@ -76,7 +77,7 @@
                 </div>
             </fieldset>
 
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
         </form>
         <span>Already have an account? (You don't.) <a href="">Log in</a></span>
     </section>
