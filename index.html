@@ -12,20 +12,22 @@
 </head>
 <body>
     <section class="left">
-        <h1>FORM</h1>
-        <aside>Photo credit: <a href="https://unsplash.com/@rfrsrh">Foad Roshan</a></aside>
+        <header>
+            <h1>FORM</h1>
+        </header>
+        <aside class="photo-credit">Photo credit: <a href="https://unsplash.com/@rfrsrh">Foad Roshan</a></aside>
     </section>
 
     <section class="right">
         <h3>This is NOT a real service! You know you will never need something like this in your life. Sign up NOW to do nothing!
-        <br>
+        <br><br>
         You KNOW you want to.
         </h3>
         <form action="" method="get">
             <h3>Let's go!</h3>
 
             <div class="text-inputs">
-                <ul class="left-inputs">
+                <ul class="left-text">
                     <li class="text-input">
                         <label for="first-name">First Name</label>
                         <input id="first-name" name="first-name" type="text">
@@ -39,7 +41,7 @@
                         <input id="user-password" name="user-password" type="text">
                     </li>
                 </ul>
-                <ul class="right-inputs">
+                <ul class="right-text">
                     <li class="text-input">
                         <label for="last-name">Last Name</label>
                         <input id="last-name" name="last-name" type="text">
@@ -58,14 +60,20 @@
             <fieldset class="radio-inputs">
                 <legend>This is irrelevant, I just want to do a radio.</legend>
 
-                <input id="pink" name="bg-colour" value="pink" type="radio">
-                <label for="pink">Pink</label>
+                <div class="radio-input">
+                    <input id="pink" name="bg-colour" value="pink" type="radio">
+                    <label for="pink">Pink</label>
+                </div>
 
-                <input id="yellow" name="bg-colour" value="yellow" type="radio">
-                <label for="yellow">Yellow</label>
+                <div class="radio-input">
+                    <input id="yellow" name="bg-colour" value="yellow" type="radio">
+                    <label for="yellow">Yellow</label>
+                </div>
 
-                <input id="blue" name="bg-colour" value="blue" type="radio">
-                <label for="blue">Blue</label>
+                <div class="radio-input">
+                    <input id="blue" name="bg-colour" value="blue" type="radio">
+                    <label for="blue">Blue</label>
+                </div>
             </fieldset>
 
             <button>Create Account</button>

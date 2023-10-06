@@ -1,3 +1,4 @@
+/* MAIN / BODY */
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +7,7 @@
 
 body {
     font-family: 'Inconsolata';
+    color: rgb(157, 95, 40);
     background-color: pink;
 
     height: 100vh;
@@ -17,12 +19,17 @@ h1, h3 {
     font-family: 'Shadows into Light';
 }
 
+/* LEFT / RIGHT COLS */
 .left {
     background-image: url("foad-roshan-TtDNu-Heh3Y-unsplash.jpg");
     background-size: cover;
     
     height: 100vh;
     width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .right {
     background-color: white;
@@ -35,7 +42,27 @@ h1, h3 {
     gap: 20px;
 }
 
-form {
+/* LEFT COL */
+.left header {
+    background-color:rgba(255, 192, 203, 0.402);
+
+    padding: 15px;
+    margin-top: 40%;
+
+    text-align: center;
+}
+.left h1 {
+    font-size: 3rem;
+}
+.left .photo-credit {
+    padding: 15px;
+}
+
+/* RIGHT FORM */
+.right h3 {
+    font-size: 1.5rem;
+}
+.right form {
     border: 3px dashed pink;
 
     padding: 25px;
@@ -44,11 +71,12 @@ form {
     flex-direction: column;
     gap: 25px;
 }
-.text-inputs {
+
+form .text-inputs {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
-ul {
+.left-text, .right-text {
     list-style-type: none;
 
     width: 40%;
@@ -56,12 +84,22 @@ ul {
     flex-direction: column;
     gap: 20px;
 }
-li {
+li.text-input {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.radio-inputs {
+form .radio-inputs {
     border: 2px solid pink;
-    padding: 15px;
+    padding: 20px;
+
+    display: flex;
+    gap: 40px;
+}
+
+form button {
+    width: 40%;
+    padding: 10px;
+
+    align-self: center;
 }
