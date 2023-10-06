@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata';
+    background-color: pink;
+
+    height: 100vh;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+h1, h3 {
+    font-family: 'Shadows into Light';
+}
+
+.left {
+    background-image: url("foad-roshan-TtDNu-Heh3Y-unsplash.jpg");
+    background-size: cover;
+    
+    height: 100vh;
+    width: 30vw;
+}
+.right {
+    background-color: white;
+
+    width: 55vw;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    border: 3px dashed pink;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.text-inputs {
+    display: flex;
+    gap: 30px;
+}
+ul {
+    list-style-type: none;
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-inputs {
+    border: 2px solid pink;
+    padding: 15px;
+}
