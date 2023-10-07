@@ -19,7 +19,7 @@ form .text-inputs {
 .left-text, .right-text {
     list-style-type: none;
 
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -27,15 +27,21 @@ form .text-inputs {
 li.text-input {
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 .text-input input {
     color: var(--accent);
-    border: 1px solid var(--main);
+    border: 2px solid var(--main);
     border-radius: 10px;
+    width: 90%;
     padding: 5px;
 }
-.text-input input:invalid {
-    border: 1px solid red;
+.text-input input.invalid {
+    border: 2px solid red;
+}
+input.invalid + .error-symbol::before {
+    content: "✗";
+    color: red;
 }
 
 /* RADIO INPUTS */

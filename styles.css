@@ -9,7 +9,6 @@
     --text: rgb(178,116,61);
 }
 
-
 /* MAIN / BODY */
 
 * {
@@ -34,7 +33,7 @@ h1, h3 {
 /* LEFT / RIGHT COLS */
 
 .left {
-    background-image: url("foad-roshan-TtDNu-Heh3Y-unsplash.jpg");
+    background-image: url("img/foad-roshan-TtDNu-Heh3Y-unsplash.jpg");
     background-size: cover;
     
     height: 100vh;

@@ -6,6 +6,7 @@
     <title>Form</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="advanced-elements.css">
+    <script type="text/javascript" src="js-form.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,39 +22,58 @@
 
     <section class="right">
         <h3>This is NOT a real service! You know you will never need something like this in your life. Sign up NOW to do nothing!
-        <br><br>
-        You KNOW you want to.
         </h3>
-        <form action="" method="get">
+        <form action="" method="get" novalidate>
             <h3>Let's go!</h3>
 
             <div class="text-inputs">
                 <ul class="left-text">
                     <li class="text-input">
                         <label for="first-name">First Name</label>
-                        <input id="first-name" name="first-name" type="text" required>
+                        <div>
+                            <input id="first-name" name="first-name" type="text" class="invalid">
+                            <span class="error-symbol"></span>
+                        </div>
+                        <span class="error-msg"></span>
                     </li>
                     <li class="text-input">
                         <label for="user-email">Email</label>
-                        <input id="user-email" name="user-email" type="email" required>
+                        <div>
+                            <input id="user-email" name="user-email" type="email" class="invalid">
+                            <span class="error-symbol"></span>
+                        </div>
+                        <span class="error-msg"></span>
                     </li>
                     <li class="text-input">
                         <label for="user-password">Password</label>
-                        <input id="user-password" name="user-password" type="text" required>
+                        <div>
+                            <input id="user-password" name="user-password" type="password" class="invalid">
+                            <span class="error-symbol"></span>
+                        </div>
+                        <span class="error-msg"></span>
                     </li>
                 </ul>
                 <ul class="right-text">
                     <li class="text-input">
                         <label for="last-name">Last Name</label>
                         <input id="last-name" name="last-name" type="text">
+                        <span class="error-msg"></span>
                     </li>
                     <li class="text-input">
                         <label for="phone-number">Phone Number</label>
-                        <input id="phone-number" name="phone-number" type="text">
+                        <div>
+                            <input id="phone-number" name="phone-number" type="text">
+                            <span class="error-symbol"></span>
+                        </div>
+                        <span class="error-msg"></span>
                     </li>
                     <li class="text-input">
                         <label for="confirm-password">Confirm Password</label>
-                        <input id="confirm-password" name="confirm-password" type="text" required>
+                        <div>
+                            <input id="confirm-password" name="confirm-password" type="password" class="invalid">
+                            <span class="error-symbol"></span>
+                        </div>
+                        <span class="error-msg"></span>
                     </li>
                 </ul>
             </div>
