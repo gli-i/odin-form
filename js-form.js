@@ -142,3 +142,38 @@ function checkValidity() {
     })
     return ret;
 }
+
+/* RADIO - THEME CHANGER */
+
+const radio_inputs = document.querySelectorAll('.radio-input input');
+const photo_credit = document.querySelector('.photo-credit a');
+
+radio_inputs.forEach(radio_input => {
+    radio_input.addEventListener('click', () => {
+        document.documentElement.className = radio_input.value;
+        setPhotoCredit(radio_input.value);
+    })
+})
+
+function setPhotoCredit(colour){
+    let link = "";
+    let photographer = "";
+    switch(colour){
+        case "pink":
+            link = "https://unsplash.com/@rfrsrh";
+            photographer = "Foad Roshan";
+            break;
+        case "yellow":
+            link = "yellow link";
+            break;
+        case "blue":
+            link = url("https://unsplash.com/@dunkeltaenzer");
+            photographer = "Damiano Ferrante";
+            break;
+        default:
+            link = url("https://unsplash.com/@andandoporai");
+            photographer = "Rafael de Nadai";
+    }
+    photo_credit.setAttribute('href', link);
+    photo_credit.textContent = photographer;
+}

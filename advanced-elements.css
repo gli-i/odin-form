@@ -34,14 +34,25 @@ li.text-input {
     border: 2px solid var(--main);
     border-radius: 10px;
     width: 90%;
-    padding: 5px;
+    padding: 5px 5px 0px 5px;
 }
 .text-input input.invalid {
-    border: 2px solid red;
+    border: 2px solid var(--red);
 }
 input.invalid + .error-symbol::before {
     content: "✗";
-    color: red;
+    color: var(--red);
+}
+.text-input .error-msg {
+    background-color: var(--acc-light);
+    border-radius: 5px;
+
+    width: fit-content;
+    max-width: 90%;
+    padding: 2px 5px 2px 5px;
+}
+.text-input .error-msg:empty {
+    visibility: hidden;
 }
 
 /* RADIO INPUTS */

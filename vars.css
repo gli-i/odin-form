@@ -1,0 +1,60 @@
+/* VARS */
+:root {
+    --bg: rgb(241, 245, 246);
+    --main: rgb(169, 169, 169);
+    --main-light: rgb(232, 232, 232);
+    --translucent: rgba(135, 135, 135, 0.4);
+    --accent: rgb(47, 139, 210);
+    --acc-light: rgb(172, 213, 244);
+    --text: rgb(58, 58, 58);
+    --credit: rgb(125, 125, 125);
+    --red: rgb(255, 93, 93);
+}
+:root .left {
+    background-image: url("img/rafael-de-nadai-b0eg-PYGICQ-unsplash.jpg");
+}
+
+:root.pink {
+    --bg: rgb(255, 255, 255);
+    --main: rgb(255, 192, 203);
+    --main-light: rgb(255, 222, 228);
+    --translucent: rgba(255, 192, 203, 0.4);
+    --accent: rgb(78, 165, 92);
+    --acc-light: rgb(188, 237, 197);
+    --text: rgb(163, 107, 59);
+    --credit: rgb(163, 107, 59);
+    --red: rgb(255, 93, 93);
+}
+:root.pink .left {
+    background-image: url("img/foad-roshan-TtDNu-Heh3Y-unsplash.jpg");
+}
+
+:root.yellow {
+    --bg: rgb(255, 93, 93);
+    --main: rgb(255, 192, 203);
+    --main-light: rgb(255, 222, 228);
+    --translucent: rgba(255, 192, 203, 0.4);
+    --accent: rgb(78, 165, 92);
+    --acc-light: rgb(179, 227, 188);
+    --text: rgb(163, 107, 59);
+    --credit: rgb(1,1,1);
+    --red: rgb(255, 93, 93);
+}
+:root.yellow .left {
+    background-image: "";
+}
+
+:root.blue {
+    --bg: rgb(168, 237, 240);
+    --main: rgb(56, 48, 89);
+    --main-light: rgb(255, 187, 246);
+    --translucent: rgba(255, 238, 3, 0.6);
+    --accent: rgb(238, 135, 0);
+    --acc-light: rgb(255, 238, 124);
+    --text: rgb(210, 78, 192);
+    --credit: rgb(232, 103, 215);
+    --red: rgb(255, 0, 0);
+}
+:root.blue .left {
+    background-image: url("img/damiano-ferrante-gS5GbmoUUnc-unsplash.jpg");
+}
