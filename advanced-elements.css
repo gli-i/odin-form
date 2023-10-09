@@ -90,3 +90,17 @@ form button:active {
     transform: translate(0,4px);
     box-shadow: none;
 }
+
+/* SHAKE ANIMATION */
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(30px) }
+    50% { transform: translateX(-30px) }
+    75% { transform: translateX(30px) }
+    100% { transform: translateX(0) }
+  }

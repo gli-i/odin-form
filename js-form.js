@@ -122,12 +122,19 @@ function showError(validity, elem, msg_elem){
 /* BUTTON SUBMISSION */
 
 const form = document.querySelector('form');
+const bod_right = document.querySelector('section.right');
 
 // prevent the form from submitting unless no inputs are invalid
 form.addEventListener('submit', event => {
+    // prevent the form from submitting while validity check
     event.preventDefault();
+
+    // if input is valid, submit the form
     if (checkValidity()){
         form.submit();
+    // if invalid, shake the form to signify
+    } else {
+        bod_right.classList.add("shake");
     }
 })
 
@@ -142,6 +149,11 @@ function checkValidity() {
     })
     return ret;
 }
+
+// once the shake animation is done, remove the class
+bod_right.addEventListener('animationend', () => {
+    bod_right.classList.remove("shake");
+})
 
 /* RADIO - THEME CHANGER */
 
