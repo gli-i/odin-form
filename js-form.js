@@ -164,10 +164,11 @@ function setPhotoCredit(colour){
             photographer = "Foad Roshan";
             break;
         case "yellow":
-            link = "yellow link";
+            link = "https://unsplash.com/@dotjpg";
+            photographer = "Jennifer Griffin";
             break;
         case "blue":
-            link = url("https://unsplash.com/@dunkeltaenzer");
+            link = "https://unsplash.com/@dunkeltaenzer";
             photographer = "Damiano Ferrante";
             break;
         default:

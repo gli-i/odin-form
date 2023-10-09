@@ -30,18 +30,18 @@
 }
 
 :root.yellow {
-    --bg: rgb(255, 93, 93);
-    --main: rgb(255, 192, 203);
-    --main-light: rgb(255, 222, 228);
-    --translucent: rgba(255, 192, 203, 0.4);
-    --accent: rgb(78, 165, 92);
-    --acc-light: rgb(179, 227, 188);
-    --text: rgb(163, 107, 59);
-    --credit: rgb(1,1,1);
-    --red: rgb(255, 93, 93);
+    --bg: rgb(255, 234, 141);
+    --main: rgb(231, 126, 199);
+    --main-light: rgb(255, 166, 228);
+    --translucent: rgba(231, 126, 199, 0.6);
+    --accent: rgb(46, 187, 143);
+    --acc-light: rgb(119, 225, 190);
+    --text: rgb(47, 55, 100);
+    --credit: rgb(225, 173, 31);
+    --red: rgb(255, 0, 0);
 }
 :root.yellow .left {
-    background-image: "";
+    background-image: url("img/photo-1594050739480-242377ad0f67.avif");
 }
 
 :root.blue {
