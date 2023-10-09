@@ -159,11 +159,14 @@ bod_right.addEventListener('animationend', () => {
 
 const radio_inputs = document.querySelectorAll('.radio-input input');
 const photo_credit = document.querySelector('.photo-credit a');
+const radio_caption = document.querySelector('.radio-caption');
 
 radio_inputs.forEach(radio_input => {
     radio_input.addEventListener('click', () => {
         document.documentElement.className = radio_input.value;
         setPhotoCredit(radio_input.value);
+        
+        radio_caption.textContent = "This is important - Choose a theme: "
     })
 })
 
